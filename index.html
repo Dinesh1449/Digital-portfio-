@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh R - Digital Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(45deg, #1e3c72, #2a5298, #ffcc00);
+            background-size: 300% 300%;
+            animation: bgAnimation 10s infinite alternate;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes bgAnimation {
+            0% { background-position: left top; }
+            100% { background-position: right bottom; }
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            color: #ffcc00;
+            font-size: 36px;
+            text-shadow: 0 0 8px rgba(255, 204, 0, 0.8);
+        }
+
+        h2 {
+            color: #ffcc00;
+            margin-top: 20px;
+            text-shadow: 0 0 5px rgba(255, 204, 0, 0.7);
+        }
+
+        .profile img {
+            width: 150px;
+            border-radius: 50%;
+            border: 4px solid #ffcc00;
+            transition: 0.3s;
+        }
+
+        .profile img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #ffcc00;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: rgba(255, 255, 255, 0.2);
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        ul li:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+
+        .resume a {
+            display: inline-block;
+            background: #ffcc00;
+            color: #1e3c72;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-decoration: none;
+            font-size: 18px;
+            box-shadow: 0 0 10px rgba(255, 204, 0, 0.8);
+        }
+
+        .resume a:hover {
+            background: #e6b800;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 204, 0, 1);
+        }
+
+        .contact p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .contact i {
+            color: #ffcc00;
+            margin-right: 8px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="your-photo.jpg" alt="Dinesh R">
+            <h1>Dinesh R</h1>
+            <p>I am a second-year BSc IT student passionate about Ethical Hacking and Film Editing.</p>
+        </div>
+
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <p><strong>Bachelor of Science in Information Technology (BSc IT)</strong><br>
+        Vasavi College, Erode (Self Finance Wing)<br>
+        Batch 2023-2026</p>
+
+        <h2><i class="fas fa-code"></i> Skills</h2>
+        <ul>
+            <li><i class="fas fa-desktop"></i> Basic Computer Knowledge</li>
+            <li><i class="fas fa-laptop-code"></i> Programming: C, C++, Java</li>
+            <li><i class="fas fa-terminal"></i> Linux Basics</li>
+            <li><i class="fas fa-robot"></i> Effective use of AI tools like ChatGPT</li>
+            <li><i class="fas fa-video"></i> Basic Video Creation</li>
+        </ul>
+
+        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> <strong>Completed:</strong> Digital Portfolio (This Website)</li>
+            <li><i class="fas fa-lightbulb"></i> <strong>Future Project:</strong> Crypto and Forex Filter Assistant (Tracks bullish currency & blockchains)</li>
+        </ul>
+
+        <h2><i class="fas fa-award"></i> Certifications & Achievements</h2>
+        <ul>
+            <li><i class="fas fa-certificate"></i> IBM Certified Cloud Course</li>
+            <li><i class="fas fa-graduation-cap"></i> Completed Basic Computer Course</li>
+        </ul>
+
+        <div class="resume">
+            <h2><i class="fas fa-file-alt"></i> Resume</h2>
+            <a href="your-resume.pdf" download><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+
+        <div class="contact">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p><i class="fas fa-envelope"></i> Email: <strong>dineshit144@gmail.com</strong></p>
+            <p><i class="fas fa-phone"></i> Phone: <strong>9043844753</strong></p>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 Dinesh R | All Rights Reserved
+        </div>
+    </div>
+</body>
+</html>
